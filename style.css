@@ -1,0 +1,296 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
+    margin: 0px;
+    font-family: 'segoe ui';
+  }
+  .logo{
+      height: 40px;
+  }
+  
+  .nav {
+    height: 50px;
+    width: 100%;
+    background-color: transparent;
+    position: relative;
+  }
+  
+  .nav > .nav-header {
+    display: inline;
+  }
+  
+  .nav > .nav-header > .nav-title {
+    display: inline-block;
+    font-size: 22px;
+    color: #78A92D;
+    padding: 10px 10px 10px 10px;
+  }
+  
+  .nav > .nav-btn {
+    display: none;
+  }
+  
+  .nav > .nav-links {
+    display: inline;
+    float: right;
+    font-size: 18px;
+    font-weight: 600;
+  }
+  
+  .nav > .nav-links > a {
+    display: inline-block;
+    padding: 13px 10px 13px 10px;
+    text-decoration: none;
+    color: #78A92D;
+    
+  }
+  
+  /* .nav > .nav-links > a:hover {
+    background-color: rgba(0, 0, 0, 0.3);
+  } */
+  
+  .nav > #nav-check {
+    display: none;
+  }
+  
+  @media (max-width:600px) {
+    .nav > .nav-btn {
+      display: inline-block;
+      position: absolute;
+      right: 0px;
+      top: 0px;
+    }
+    .nav > .nav-btn > label {
+      display: inline-block;
+      width: 50px;
+      height: 50px;
+      padding: 13px;
+    }
+    .nav > .nav-btn > label:hover,.nav  #nav-check:checked ~ .nav-btn > label {
+      background-color: rgba(0, 0, 0, 0.3);
+    }
+    .nav > .nav-btn > label > span {
+      display: block;
+      width: 25px;
+      height: 10px;
+      border-top: 2px solid #eee;
+    }
+    .nav > .nav-links {
+      position: absolute;
+      display: block;
+      width: 100%;
+      background-color: #ffffff;
+      height: 0px;
+      transition: all 0.3s ease-in;
+      overflow-y: hidden;
+      top: 50px;
+      left: 0px;
+    }
+    .nav > .nav-links > a {
+      display: block;
+      width: 100%;
+    }
+    .nav > #nav-check:not(:checked) ~ .nav-links {
+      height: 0px;
+    }
+    .nav > #nav-check:checked ~ .nav-links {
+      height: calc(100vh - 50px);
+      overflow-y: auto;
+    }
+  }
+
+
+  .parent{
+      display: flex;
+  }
+  .big_logo{
+      height: 214px;
+      margin-top: 20px;
+      margin-left: 120px;
+  }
+  .description{
+      color: rgba(0, 0, 0, 0.52);
+      font-style: italic;
+      font-weight: 700;
+      font-size: 20px;
+      text-align: left;
+      margin-left: 40px;
+  }
+  .rotate{
+      margin-right: 90px;
+      height: 500px;
+      animation: imgRotate 30s linear infinite;
+      margin-top: 30px;
+      
+  }
+  .btn1{
+      margin-top: 78px;
+      height: 50px;
+      top:5rem;
+      color: #ffffff;
+      background-color: #78a92d;
+      width: 150px;
+      margin-left: -170px;
+      border-radius: 28px;
+      
+      text-shadow: 2px 2px 5px rgb(241, 239, 239);
+      border-width: 0px;
+      box-shadow: 1px 1px 5px 3px #d0f599;
+   
+  }
+
+  
+
+  .green_img{
+      height: 600px;
+      position: absolute;
+      /* margin-right:-70% ; */
+      width: 450px;
+left: 64.4%;
+/* right: -12.2%; */
+top: 1.58%;
+bottom: 87.83%;
+z-index: -1;
+
+/* transform: matrix(0.98, -0.33, -0.18, 0.95, 0, 0); */
+      
+  }
+  .group{
+      display: flex;
+      margin-top: -30px;
+  }
+  .food{
+    transform: rotate(-3.9deg);
+
+      height: 323px;
+      margin-left: 70px;
+  }
+.about_us{
+    display: flex;
+}
+.heading_about{
+    /* font-family: pacifico; */
+    font-family: 'Pacifico';
+    font-size: 64px;
+    color: #78A92D;
+}
+.about_us_desc{
+    margin-left: 40px;
+    font-family: "Century Gothic";
+}
+.image_about{
+    height: 470px;
+    margin-right: 70px;
+}
+.about_description{
+    font-family: "poppins";
+    font-size: 24px;
+    color: #000000;
+    font-weight: 500;
+}
+@keyframes imgRotate {
+    100% {
+        transform: rotate(360deg);
+    }
+}
+.row{
+    display: flex;
+    
+}
+.chef_count{
+    font-family: 'Pacifico';
+    color: #78A92D;
+    font-size: 40px;
+    margin-left: 40px;
+}
+.chef{
+    font-size: 40px;
+    margin-left: 20px;
+    /* font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; */
+    font-family: "Comic Sans MS";
+}
+.customer_count{
+    font-family: 'pacifico';
+    color: #78A92D;
+    font-size: 40px;
+    margin-left: 30px;
+    
+}
+.customer{
+    font-size: 40px;
+    font-family: "Comic Sans MS";
+    margin-left: 20px;
+    /* font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; */
+}
+.service{
+    font-family: 'pacifico';
+    color: #78A92D;
+    font-size: 70px;
+    text-align: center;
+}
+.name{
+    color: #FFB61D;
+    font-weight: 500;
+}
+.card1{
+    box-shadow: 4px 1px 6px 5px #ecf9da;
+    width: 250px;
+    margin-left: 70px;
+}
+.card_parent{
+    display: flex;
+}
+.card2{
+    
+    box-shadow: 4px 1px 6px 5px #ecf9da;
+    width: 250px;
+    margin-left: 40px;
+}
+.card3{
+    width: 250px;
+    margin-left: 40px;
+    box-shadow: 4px 1px 6px 5px #ecf9da;
+}
+.card4{
+    width: 250px;
+    margin-left: 40px;
+    box-shadow: 4px 1px 6px 5px #ecf9da;
+
+}
+.order_online{
+    color: #78A92D;
+    margin-left: 60px;
+    
+}
+.services{
+    color: #78A92D;
+    align-items: center;
+    margin-left: 60px;
+}
+.quality_food{
+    color: #78A92D;
+    margin-left: 60px;
+
+}
+.home_chef{
+    color: #78A92D;
+    margin-left: 60px;
+}
+.work{
+    font-family:'Pacifico';
+    color: #78A92D;
+    font-size: 60px;
+    margin-left: 450px;
+}
+.hello{
+    align-items: center;
+}
+.browse{
+    font-style: italic;
+    color: #000000;
+    font-size: 30px;
+    margin-top: -30px;
+    margin-left: 450px;
+}
