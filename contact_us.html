@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Form</title>
+
+    <!-- =============== CSS =============== -->
+    <link rel="stylesheet" href="contact_us.css" />
+
+    <!-- =============== BOXICONS =============== -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+    <!-- =================== Google FOnt PACIFICO ============ -->
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <script
+      src="https://kit.fontawesome.com/64d58efce2.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div class="container1">
+      <div class="navbar">
+        <img src="https://cdn.discordapp.com/attachments/891025496601661504/963850151984767036/unknown.png" class="nav-logo">
+        <nav>
+          <ul id="menulist">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="our_kitchen.html">Our Kitchen</a></li>
+            <li><a href="offers.html">Offers</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="contact_us.html">Contact Us</a></li>
+          </ul>
+        </nav>
+        <img class="menu-icon" onclick="togglemenu()"  src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAAAXNSR0IArs4c6QAAAG9JREFUSEvtlckNwCAQA01nlEY6g8qC9rEfjigPKyBiF+CRRoYNWJSwiAuBPzMv1a46AbiJ3q+2a6aaCTVmx9kOTLQ8rtKq3Uskr7po1bNxmWpm8lvVTOiwS8/Jtfzvr7azyEzXp3Ex9T52SfX5qisn1AwfJnWg+AAAAABJRU5ErkJggg=="/>
+      </div>
+    </div>
+    <!-- <hr> -->
+<!-- ###################### Section1 ################################################ -->
+    <div class="container">
+      <span class="big-circle"></span>
+      <img src="img/shape.png" class="square" alt="" />
+      <div class="form">
+        <div class="contact-info">
+            <h3 class="title1">Contact Us</h3>
+            <h1 class="title1">Get In Touch For</h1 >
+              <div class="image-grid">
+                <img src="https://cdn.discordapp.com/attachments/885108791610322964/969512290049216542/gr.png" alt="">
+              </div>
+              
+        </div>
+
+
+        <div class="contact-form">
+          <div class="contact-form-background">
+            <form  name='submit-to-google-sheet' method = "POST" data-email="homianscontacts@gmail.com">
+              <!-- <h3 class="title">Contact us</h3> -->
+              <div class="input-container">
+                <input type="text" name="name" class="input" />
+                <label for="">Name</label>
+                <span>Name</span>
+              </div>
+              <div class="input-container">
+                <input type="email" name="email" class="input" />
+                <label for="">Email</label>
+                <span>Email</span>
+              </div>
+              <div class="input-container">
+                <input type="tel" name="phone" class="input" />
+                <label for="">Phone</label>
+                <span>Phone</span>
+              </div>
+              <div class="input-container textarea">
+                <textarea name="message" class="input"></textarea>
+                <label for="">Message</label>
+                <span>Message</span>
+              </div>
+              <div class="buttons">
+                <!-- <input type="submit" value="Send" class="btn" /> -->
+                <button type="submit" class="btn btn-primary">Send!</button>
+
+                <input type="submit" value="Call Us" class="btn" />
+  
+              </div>
+             
+            </form>
+          </div>
+          
+
+          
+        </div>
+      </div>
+    </div>
+
+    <!-- ----------------------------Section2--------------------------------------------- -->
+    <div class="customer-support">
+        <!-- <div class="support-header">
+            <h2 class="heading">Customer Support</h2>
+        </div>  -->
+        <section>
+          <h2 class="heading2">Customer Support</h2>
+            <div class="container2">
+                <div class="box">
+                  <h3 class="option-title">Cancellation Option</h3>
+                  <div class="imgbox">
+                    <img src="https://s3-alpha-sig.figma.com/img/39e0/de3d/3e761fd08efd314b4d5f1dd788c4bfb4?Expires=1651449600&Signature=UKwHj2EjOFim8sLvXryOJOS9ACiURozEwmEB2IgjcV1ETZhR~k8Zpg6RqtJM0Ubx2rYGepJTgnpuztgt2i0bm2JqsB3zFHXPLXbNAtQelaAYD-CIrT37MrrLVrQ2w~885SRraNtBf6S0m3lBMCRt1L6o187QmXBL27r9k0MFxA5IXrU3C7AmRBTNgnzA4wRANjuKE0VOoztBEvLWBz-RBrBObk7N1ekll--pKt7ug7L9FjaXh1-UqjWy8jqjoLkVYYB7lmCA5io0JuObFw0Ay8oDUk5YyF-mFolQ9WW97fdEIOnCH-zwQLRAqJ-6fZzVoHZF19t3m3N11tOok5wswg__&Key-Pair-Id=APKAINTVSUGEWH5XD5UA" class="option-logo" alt="">
+                  </div>
+                  <h1>&#8221;</h1>
+                  <p class='option-text' >Customers can easily cancel their meals during their Subscription and no amount will be charged for it.</p>
+                </div>
+
+                <div class="box">
+                  <h3 class="option-title">Subscription Option</h3>
+                  <div class="imgbox">
+                    <img src="https://s3-alpha-sig.figma.com/img/af49/d564/5327eda8bf71f74eb22a331c180a0865?Expires=1651449600&Signature=ZorDhUQEQ26B5AZr~xIDXXoBGjYC9Dj3-WSyoJ3WgHc5pvyLcCLwtjCu~Uye-fo5-cz4rwaUCTwOWGEnAwKIBTkylpvIJNKeD9z5EEKGU2B-aS4C7tt8dfPq33RpIITLrX2f7eFPkYkAyF490JxUmpFfKYxSzCvJ-NrtC8YqG87cPKc2c7xp6yYvRLtZOIjNon-gJmcrx8wUE02e4oXg7KN7-UHEEQ9JQAWdYtC3SL~qtPDDj9Pgzab8ZqISLT62oCH-I2C8z2u-D4fjvcoCjgn4HFAha8FDx7lx4WlrdiRwhEnDzCLv0fSg~XL6J2QB6lbHLgcP8aydWgFG3aAa0g__&Key-Pair-Id=APKAINTVSUGEWH5XD5UA" class="option-logo" alt="">
+                  </div>
+                  <h1>&#8221;</h1>
+                  <p class='option-text' >Customers can quickly file a complaint if they have any inconveniences, which will be resolved within 48 hours</p>
+
+                </div>
+
+                <div class="box">
+                  <h3 class="option-title">Complaint Facility</h3>
+                  <div class="imgbox">
+                    <img src="https://s3-alpha-sig.figma.com/img/9aaa/aa6b/3b2dd5533a60999dbb35fb64bd10bdc8?Expires=1651449600&Signature=H6o9qF8jCEaGiawI318yKlQkcyEXL4gKPD2niyrfmPQ2iJDUzV0qlcZp2y6l5pkrlcXD12wX2VeoHPY5PhGcgyWvtUl9cw0LgWYbbjMTgR46dzXqTXPVgqMuFjEB7pjbAnpMmSagJyiWB07LaDq6QAkcECFDWX4uVsbgN15likDc20QRNvwve4M2iCuJ3uahO2O41I4HpYA2s7Jr42W8~94Pko3ewhxzGORuTTyI6qVRePGkx1Rb3AG1-wMJHkEhkefa4xw8ARFOP37EHGEKUrL90Fw~lmonOqPLM0-9p2mp340FEUf2jutbiwyra4DfXt9dD69ib4Z6gKDb8Br4iA__&Key-Pair-Id=APKAINTVSUGEWH5XD5UA" class="option-logo" alt="">
+                  </div>
+                  <h1>&#8221;</h1>
+                  <p class='option-text' >Customers can quickly file a complaint if they have any inconveniences, which will be resolved within 48 hours</p>
+                </div>
+                <div class="box">
+                  <h3 class="option-title">Customer Care</h3>
+                  <div class="imgbox">
+                    <img src="https://cdn.discordapp.com/attachments/891025496601661504/967506340589215814/unknown.png" class="option-logo" alt="">
+                  </div>
+                  <h1>&#8221;</h1>
+                  <p class='option-text'>Customers will get assistance & support 24*7 for their all types of queries & doubts</p>
+                </div>
+             </div>
+          </section>
+      
+    </div> 
+
+    <!-- ---------------------------section3------------------------------------ -->
+    
+  <div class="faq">
+      <h2 class="heading3">FAQ's</h2>
+      <!-- <h2 class="sub-heading3">Frequently Asked Questions</h2> -->
+  </div>
+  <section class="section3">
+    <div class="slider">
+      <div class="slide active">
+        <img class="slides-ques" src="https://cdn.discordapp.com/attachments/891025496601661504/969649843888869386/FAQ1.png" alt="">
+        <div class="info">
+          <!-- <h2>Winter Mountains</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p> -->
+        </div>
+      </div>
+      <div class="slide">
+        <img class="slides-ques" src="https://cdn.discordapp.com/attachments/891025496601661504/969661036137447474/FAQ3.png" alt="">
+        <div class="info">
+          <!-- <h2>Tropical Desert</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p> -->
+        </div>
+      </div>
+      <div class="slide">
+        <img class="slides-ques" src="https://cdn.discordapp.com/attachments/891025496601661504/969661036397473822/FAQ4.png" alt="">
+        <div class="info">
+          <!-- <h2>Steaming Volcanoes</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p> -->
+        </div>
+      </div>
+      <div class="slide">
+        <img class="slides-ques" src="https://cdn.discordapp.com/attachments/891025496601661504/969661037160841326/FAQ2.png" alt="">
+        <div class="info">
+          <!-- <h2>Mountain River</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p> -->
+        </div>
+      </div>
+      <div class="slide">
+        <img class="slides-ques" src="https://cdn.discordapp.com/attachments/891025496601661504/969661036938526770/FAQ5.png" alt="">
+        <div class="info">
+          <!-- <h2>Egypt Pyramids</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p> -->
+        </div>
+      </div>
+      <div class="navigation">
+        <i class="fas fa-chevron-left prev-btn"></i>
+        <i class="fas fa-chevron-right next-btn"></i>
+      </div>
+      <div class="navigation-visibility">
+        <div class="slide-icon active"></div>
+        <div class="slide-icon"></div>
+        <div class="slide-icon"></div>
+        <div class="slide-icon"></div>
+        <div class="slide-icon"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- -------------------------------------------------------------FOOTER----------------------------------------------------------------- -->
+  <img class="new_devesh_logo" src="https://cdn.discordapp.com/attachments/891025496601661504/969947238530949130/unknown.png"/>
+  <footer>
+    <div class="content">
+      <div class="top">
+        <div class="logo-details">
+          
+        
+          <span class="logo_name"><img class="new_footer_logo"src="https://cdn.discordapp.com/attachments/891025496601661504/969953751064539146/unknown.png"/></span>
+        </div>
+       
+      </div>
+      <div class="link-boxes">
+        <ul class="box">
+          <li class="link_name">Homians</li>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Contact us</a></li>
+          <li><a href="#">About us</a></li>
+          <li><a href="#">Terms & Conditions</a></li>
+        </ul>
+        <ul class="box">
+          <li class="link_name">Contact Us</li>
+          <li><a href="#"><i class="fa fa-map-marker"></i>Pari Chowk, Greater Noida</a></li>
+          <li><a href="#"><i class="fa fa-phone"></i>+91-8287799188,</a></li>
+          <li><a href="#">+91-8882003295</a></li>
+          <li><a href="#"><i class="fa fa-envelope"></i>customercare<br>@homians.com</a></li>
+        </ul>
+        <ul class="box">
+          <li class="link_name">Timings</li>
+          <li><a href="#">> Breakfast
+            8:00 AM - 9:30 PM</a></li>
+          <li><a href="#">> Lunch
+            12:00 PM - 1:30 PM</a></li>
+          <li><a href="#">> DINNER
+            7:30 PM - 9:00 PM
+            </a></li>
+   
+        </ul>
+       
+        <ul class="box input-box">
+          <li class="link_name">Have questions in mind?
+            Let us help you!</li>
+          <li><input type="text" placeholder="Enter your email"></li>
+          <li><input type="button" value="Send"></li>
+        </ul>
+      </div>
+    </div>
+    <div class="bottom-details">
+      <div class="bottom_text">
+        <span class="copyright_text">2022 ©️All Rights Reserved By @HOMIANS</span>
+        <span class="policy_terms">
+          <a href="#">Privacy policy</a>
+          <a class="terms" href="#">Terms & condition</a>
+        </span>
+      </div>
+    </div>
+  </footer>
+  
+  
+  
+  
+  <!-- ------------------------------------------------Javascript---------------------------------------------------------- -->
+
+    <script src="script.js"></script>
+    <script>
+      var menulist = document.getElementById("menulist");
+      menulist.style.maxHeight = "0px";
+      function togglemenu(){
+        if(menulist.style.maxHeight == "0px")
+        {
+          menulist.style.maxHeight = "190px";
+        }
+        else{
+          menulist.style.maxHeight = "0px";
+        }
+      }
+    </script>
+    <!-- ####################### contact us form data  #########################################  -->
+    <script>
+      const scriptURL = 'https://script.google.com/macros/s/AKfycbw7b6949w6rCsjtGlaXuhAM-_ft1XYokzim3MVYU1pw/dev'
+      const form = document.forms['submit-to-google-sheet']
+  
+      form.addEventListener('submit', e => {
+        e.preventDefault()
+        fetch(scriptURL, { method: 'POST', 
+        body: new FormData(form)})
+          .then(response => {
+            let successbox = document.querySelector('.success-message');
+            successbox.innerHTML = '<div class="alert alert-primary">We will get back to you ASAP!</div>';
+            form.name = form.email = form.message = ' ';
+            console.log('Success!', response)
+          })
+          .catch(error => console.error('Error!', error.message))
+      })
+      </script>
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+    <script type="text/javascript">
+      const slider = document.querySelector(".slider");
+      const nextBtn = document.querySelector(".next-btn");
+      const prevBtn = document.querySelector(".prev-btn");
+      const slides = document.querySelectorAll(".slide");
+      const slideIcons = document.querySelectorAll(".slide-icon");
+      const numberOfSlides = slides.length;
+      var slideNumber = 0;
+  
+      //image slider next button
+      nextBtn.addEventListener("click", () => {
+        slides.forEach((slide) => {
+          slide.classList.remove("active");
+        });
+        slideIcons.forEach((slideIcon) => {
+          slideIcon.classList.remove("active");
+        });
+  
+        slideNumber++;
+  
+        if(slideNumber > (numberOfSlides - 1)){
+          slideNumber = 0;
+        }
+  
+        slides[slideNumber].classList.add("active");
+        slideIcons[slideNumber].classList.add("active");
+      });
+  
+      //image slider previous button
+      prevBtn.addEventListener("click", () => {
+        slides.forEach((slide) => {
+          slide.classList.remove("active");
+        });
+        slideIcons.forEach((slideIcon) => {
+          slideIcon.classList.remove("active");
+        });
+  
+        slideNumber--;
+  
+        if(slideNumber < 0){
+          slideNumber = numberOfSlides - 1;
+        }
+  
+        slides[slideNumber].classList.add("active");
+        slideIcons[slideNumber].classList.add("active");
+      });
+  
+      //image slider autoplay
+      var playSlider;
+  
+      var repeater = () => {
+        playSlider = setInterval(function(){
+          slides.forEach((slide) => {
+            slide.classList.remove("active");
+          });
+          slideIcons.forEach((slideIcon) => {
+            slideIcon.classList.remove("active");
+          });
+  
+          slideNumber++;
+  
+          if(slideNumber > (numberOfSlides - 1)){
+            slideNumber = 0;
+          }
+  
+          slides[slideNumber].classList.add("active");
+          slideIcons[slideNumber].classList.add("active");
+        }, 4000);
+      }
+      repeater();
+  
+      //stop the image slider autoplay on mouseover
+      slider.addEventListener("mouseover", () => {
+        clearInterval(playSlider);
+      });
+  
+      //start the image slider autoplay again on mouseout
+      slider.addEventListener("mouseout", () => {
+        repeater();
+      });
+      </script>
+  </body>
+</html>
